@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
 }
-:root{
-  background-color: aqua;
-  width: 100%;
+:root {
+  width: 99.99%;
   display: flex;
   justify-content: center;
 }
 
-body{
-  border: 2px solid red;
-  width: 99%;
+body {
+  width: 99.9%;
+  display: flex;
+  justify-content: center;
 }
