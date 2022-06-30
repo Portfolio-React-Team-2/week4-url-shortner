@@ -39,7 +39,7 @@
      border-radius: 20px;
  }
 
- @media (max-width: 600px) {
+ @media (max-width: 520px) {
      .nav-menu a {
          display: none;
      }

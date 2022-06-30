@@ -1,0 +1,44 @@
+.sidebarmenu {
+    display: none;
+}
+
+@media (max-width: 520px) {
+    .sidebarmenu {
+        height: 100%;
+        background: white;
+        box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 70%;
+        /* max-width: 400px; */
+        z-index: 200;
+        display: flex;
+    }
+
+    .sidebarmenu ul {
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sidebarmenu li {
+        margin: 0.5rem 0;
+        margin-left: 70px;
+
+    }
+
+    .sidebarmenu a {
+        color: black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .sidebarmenu a:hover,
+    .sidebarmenu a:active {
+        color: brown;
+    }
+}
