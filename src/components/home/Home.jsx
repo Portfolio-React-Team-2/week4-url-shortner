@@ -10,11 +10,14 @@ const Home = () => {
         <div className="sideimg1">
           <img src={pic2} alt="" />
         </div>
-        <form action="" method="get">
+        <form action="" method="get" id='form'>
           <label htmlFor="url" id='label'>Enter your URL here</label>
-          <input type="url" name="url" id="url" />
+          <input type="url" name="url" id="url" required />
           <label htmlFor="link" id='label'>Customize your link</label>
-          <input type="url" name="url" id="url" placeholder='fe-team2shorturl.me' />
+          <div id='custom'>
+            <input type="url" name="url" id="url" placeholder='fe-team2shorturl.me' />
+            <input type="submit" value="alias" id='alias' disabled />
+          </div>
           <div className="btns">
             <a href="/" id='myurl'>My URL</a>
             <button className='fet2-it'>FET2 It</button>

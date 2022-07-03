@@ -1,0 +1,98 @@
+.poplink {
+    margin-top: 160px;
+}
+
+form#shortform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 350px;
+    padding: 38px 25px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(216, 210, 210);
+    box-shadow: 5px 2px 15px 0px rgb(204, 195, 195);
+    z-index: 999;
+}
+
+label#short-label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 50px;
+}
+
+input#shortlink {
+    height: 35px;
+    width: 15pc;
+    border-radius: 5px;
+    border-right: -10px;
+    border: 1px solid rgb(204, 195, 195);
+    margin-bottom: 20px;
+}
+
+#copylink {
+    width: 20rem;
+    padding: 7px;
+    border: 1px solid rgb(204, 195, 195);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 205px;
+    background-color: rgb(97, 49, 15);
+    color: white;
+    width: 65px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btns-shortform {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a#myurls {
+    color: rgb(121, 111, 111);
+    cursor: pointer;
+}
+
+.details {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid;
+    background-color: white;
+    color: rgb(97, 49, 15);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    width: 120px;
+    cursor: pointer;
+}
+
+@media (max-width: 708px) {
+    .poplink {
+        margin-top: 200px;
+    }
+
+    form#shortform {
+        height: 240px;
+        width: 240px;
+        padding: 12px 25px;
+    }
+
+    label#short-label {
+        margin-top: -22px;
+        margin-bottom: 50px;
+    }
+
+    input#shortlink {
+        width: 11pc;
+    }
+
+    #copylink {
+        width: 33px;
+    }
+}
