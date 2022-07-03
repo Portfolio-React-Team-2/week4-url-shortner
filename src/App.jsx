@@ -7,6 +7,7 @@ import {
 import Home from "./components/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Sidedrawer from "./components/navbarmobile/SideDrawer";
+// import Poplink from "./components/poplink/poplink";
 
 
 class App extends Component {
@@ -34,6 +35,7 @@ class App extends Component {
         <Routes>
           <Route path="/" element={<Home />}></Route>
         </Routes>
+        {/* <Poplink /> */}
       </Router>
     );
   }
