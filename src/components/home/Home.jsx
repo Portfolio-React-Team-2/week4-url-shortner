@@ -15,7 +15,7 @@ const Home = () => {
           <input type="url" name="url" id="url" required />
           <label htmlFor="link" id='label'>Customize your link</label>
           <div id='custom'>
-            <input type="url" name="url" id="url" placeholder='fe-team2shorturl.me' />
+            <input type="link" name="link" id="url" placeholder='fe-team2shorturl.me' />
             <input type="submit" value="alias" id='alias' disabled />
           </div>
           <div className="btns">
