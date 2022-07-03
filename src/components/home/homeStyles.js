@@ -1,18 +1,19 @@
-.home {
-    margin-top: 160px;
-}
+import styled from "styled-components";
 
-.form-container {
+export const HomeStyles = styled.div`
+  margin-top: 160px;
+
+  .form-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
+  }
 
-.sideimg1 {
+  .sideimg1 {
     display: none;
-}
+  }
 
-form#form {
+  form#form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,48 +24,58 @@ form#form {
     border-radius: 10px;
     border: 1px solid rgb(204, 195, 195);
     box-shadow: 1px 10px 10px -1px rgb(204, 195, 195);
-}
+  }
 
-
-.sideimg img {
+  .sideimg img {
     height: auto;
     width: auto;
-}
+  }
 
-label#label {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  label#label {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: black;
     margin-bottom: 8px;
-}
+  }
 
-#custom{
+  #custom {
     display: grid;
     grid-template-columns: 70% 30%;
     height: 35px;
     border-radius: 9px;
     border: 1px solid rgb(204, 195, 195);
     margin-bottom: 10px;
-}
 
-.rename{
-    
-}
+    border: 2px solid red;
+    div {
+      height: 35px;
 
-input#url {
+      input {
+        width: 100%;
+      }
+    }
+
+    p {
+      display: flex;
+      text-align: center;
+      padding: 20px;
+    }
+  }
+
+  input#url {
     height: 35px;
     border-radius: 9px;
     border: 1px solid rgb(204, 195, 195);
     margin-bottom: 10px;
-}
+  }
 
-#url,
-::placeholder {
+  #url,
+  ::placeholder {
     padding: 0 6px;
-}
+  }
 
-input#alias {
+  input#alias {
     width: 17rem;
     padding: 7px;
     border: 1px solid rgb(204, 195, 195);
@@ -74,61 +85,62 @@ input#alias {
     background-color: white;
     color: rgb(199, 193, 193);
     width: 65px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 14px;
-}
+  }
 
-.btns {
+  .btns {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
+  }
 
-a#myurl {
+  a#myurl {
     color: rgb(121, 111, 111);
     cursor: pointer;
-}
+  }
 
-.fet2-it {
+  .fet2-it {
     padding: 9px;
     border-radius: 10px;
     border: 1px solid;
     background-color: rgb(97, 49, 15);
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     font-size: 13px;
     width: 110px;
     cursor: pointer;
-}
+  }
 
-@media (max-width: 708px) {
-    .home {
-        margin-top: 200px;
-    }
+  @media (max-width: 708px) {
+    margin-top: 200px;
 
     .form-container {
-        display: flex;
-        flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }
 
     input#alias {
-        width: 58px;
+      width: 58px;
     }
 
     .sideimg {
-        display: none;
+      display: none;
     }
 
     .sideimg1 {
-        display: flex;
+      display: flex;
     }
 
     .sideimg1 img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 150px;
-        width: 20pc;
-        margin-top: -100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150px;
+      width: 20pc;
+      margin-top: -100px;
     }
-}
+  }
+`;
