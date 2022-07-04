@@ -44,13 +44,13 @@ export const HomeStyles = styled.div`
     grid-template-columns: 70% 30%;
     height: 35px;
     border-radius: 9px;
-    border: 1px solid rgb(204, 95, 195);
+    border: 1px solid rgb(204, 195, 195);
     margin-bottom: 10px;
-    /* border: 0; */
     padding: 0;
     justify-content: center;
     align-items: center;
     position: relative;
+
     input {
       outline: none;
     }
@@ -60,7 +60,6 @@ export const HomeStyles = styled.div`
       top: 0;
       bottom: 0;
       right: 0;
-      /* border: 4px solid rgb(104, 15, 195); */
       left: 70%;
 
       p {
