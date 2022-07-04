@@ -13,7 +13,7 @@ const Home = () => {
 
         <form action="" method="get" id="form">
           <label htmlFor="url" id="label">
-            Enter your URL here
+            Enter your long URL here
           </label>
           <input type="url" name="url" id="url" required />
 
