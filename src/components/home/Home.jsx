@@ -16,6 +16,7 @@ const Home = () => {
             Enter your URL here
           </label>
           <input type="url" name="url" id="url" required />
+
           <label htmlFor="link" id="label">
             Customize your link
           </label>
