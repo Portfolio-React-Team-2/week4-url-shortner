@@ -44,28 +44,45 @@ export const HomeStyles = styled.div`
     grid-template-columns: 70% 30%;
     height: 35px;
     border-radius: 9px;
-    border: 1px solid rgb(204, 195, 195);
+    border: 1px solid rgb(204, 95, 195);
     margin-bottom: 10px;
-
-    border: 2px solid red;
-    div {
-      height: 35px;
-
-      input {
-        width: 100%;
-      }
+    /* border: 0; */
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    input {
+      outline: none;
     }
 
-    p {
+    div.rename {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      /* border: 4px solid rgb(104, 15, 195); */
+      left: 70%;
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      /* height: 100%;
       display: flex;
       text-align: center;
-      padding: 20px;
+      justify-content: center;
+      margin: 0;
+      top: 0;
+      align-items: center;
+      */
     }
   }
 
   input#url {
     height: 35px;
-    border-radius: 9px;
+    /* border-radius: 9px; */
     border: 1px solid rgb(204, 195, 195);
     margin-bottom: 10px;
   }

@@ -1,11 +1,15 @@
 .home {
-    margin-top: 160px;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 160px;
+    /* background-image: linear-gradient(#f5d9a6, white, #f5d9a6); */
 }
 
 .form-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 999;
 }
 
 .sideimg1 {
@@ -103,7 +107,7 @@ a#myurl {
 
 @media (max-width: 708px) {
     .home {
-        margin-top: 200px;
+        padding-top: 200px;
     }
 
     .form-container {
@@ -121,6 +125,7 @@ a#myurl {
 
     .sideimg1 {
         display: flex;
+        z-index: 0;
     }
 
     .sideimg1 img {

@@ -1,8 +1,9 @@
 import React from "react";
-import "./home.css";
+// import "./home.css";
 import pic1 from "../images/FETEAME2.jpeg";
 import pic2 from "../images/FETAEME21.jpeg";
 import { HomeStyles } from "./homeStyles";
+import { AiOutlineLink } from "react-icons/ai";
 
 const Home = () => {
   return (
@@ -14,22 +15,25 @@ const Home = () => {
 
         <form action="" method="get" id="form">
           <label htmlFor="link" id="label">
-            Enter your URL here
+            <AiOutlineLink /> <AiOutlineLink /> Enter your long URL here
           </label>
           <input type="url" name="url" id="url" required />
-          <label htmlFor="url" id="label">
-            Customize your link
+
+          <label htmlFor="link" id="label">
+            <AiOutlineLink /> Customize your link
           </label>
           <div id="custom">
-            <div>
+            {/* <div> */}
               <input
                 type="url"
                 name="url"
                 id="url"
                 placeholder="fe-team2shorturl.me"
               />
+            {/* </div> */}
+            <div className="rename">
+              <p>rename</p>
             </div>
-            <p>rename</p>
             {/* <input type="submit" value="alias" id="alias" disabled /> */}
           </div>
           <div className="btns">
