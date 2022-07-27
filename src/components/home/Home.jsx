@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 // import "./home.css";
 import pic1 from "../images/FETEAME2.jpeg";
 import pic2 from "../images/FETAEME21.jpeg";
@@ -24,12 +24,12 @@ const Home = () => {
           </label>
           <div id="custom">
             {/* <div> */}
-              <input
-                type="url"
-                name="url"
-                id="url"
-                placeholder="fe-team2shorturl.me"
-              />
+            <input
+              type="url"
+              name="url"
+              id="url"
+              placeholder="fe-team2shorturl.me"
+            />
             {/* </div> */}
             <div className="rename">
               <p>rename</p>
@@ -37,9 +37,9 @@ const Home = () => {
             {/* <input type="submit" value="alias" id="alias" disabled /> */}
           </div>
           <div className="btns">
-            <a href="/" id="myurl">
-              My URL
-            </a>
+            <Link to="/urls" id="myurl">
+              My URLS
+            </Link>
             <button className="fet2-it">FET2 It</button>
           </div>
         </form>
