@@ -10,7 +10,8 @@ const Home = () => {
   const [popUp, setPopUp] = useState("");
   const [toolKit, settoolKit] = useState("");
   const urlRef = useRef();
-  let url = "http://127.0.0.1:8000/api/shortner/";
+  // let url = "http://127.0.0.1:8000/api/shortner/";
+  let url = "https://portfolio-shortner.herokuapp.com/api/shortner/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
