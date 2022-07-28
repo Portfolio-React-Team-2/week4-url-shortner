@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 
 const AllUrls = () => {
   const [urls, setUrls] = useState([]);
+  let url = "https://portfolio-shortner.herokuapp.com/api/shortner/";
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/shortner/")
+    fetch(url)
       .then((response) => response.json())
       .then((data) => setUrls([...data]));
   });
