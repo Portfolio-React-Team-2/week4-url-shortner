@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useState, useRef } from "react";
+import { useState } from "react";
 import pic1 from "../images/FETEAME2.jpeg";
 import pic2 from "../images/FETAEME21.jpeg";
 import { HomeStyles } from "./homeStyles";
@@ -8,8 +8,7 @@ import { AiOutlineLink } from "react-icons/ai";
 const Home = () => {
   const [link, setLink] = useState("");
   const [popUp, setPopUp] = useState("");
-  const [toolKit, settoolKit] = useState("");
-  const urlRef = useRef();
+  // const [toolKit, settoolKit] = useState("");
   // let url = "http://127.0.0.1:8000/api/shortner/";
   let url = "https://portfolio-shortner.herokuapp.com/api/shortner/";
 
@@ -38,10 +37,10 @@ const Home = () => {
     // copyText.select();
     // copyText.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(popUp);
-    let text = navigator.clipboard.readText().then((data) => {
-      settoolKit(data);
-    });
-    console.log(toolKit);
+    // let text = navigator.clipboard.readText().then((data) => {
+    //   settoolKit(data);
+    // });
+    // console.log(toolKit);
 
     // tooltip.innerHTML = "Copied: " + copyText.value;
   };
