@@ -14,3 +14,23 @@ export const fetchUrls = async () => {
 
   return data;
 };
+
+export const SendData = (e, url, dict) => {
+  e.preventDefault();
+  var formdata = new FormData();
+  formdata.append(`${dict.key}`, dict.value);
+
+  var requestOptions = {
+    method: "POST",
+    body: formdata,
+    redirect: "follow",
+  };
+
+  fetch(
+    url,
+    requestOptions
+  )
+    .then((response) => response.text())
+    .then((result) => console.log(result))
+    .catch((error) => console.log("error", error));
+};

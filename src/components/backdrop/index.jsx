@@ -1,5 +1,5 @@
-import UrlStyles from "./AllUrls";
-import { useState, useEffect } from "react";
+import UrlStyles from "../allUrls/AllUrls";
+import { useEffect, useState } from "react";
 
 const AllUrls = () => {
   const [urls, setUrls] = useState([]);

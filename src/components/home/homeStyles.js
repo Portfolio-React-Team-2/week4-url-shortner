@@ -61,6 +61,7 @@ export const HomeStyles = styled.div`
       bottom: 0;
       right: 0;
       left: 70%;
+      cursor: pointer;
 
       p {
         position: absolute;
@@ -107,6 +108,7 @@ export const HomeStyles = styled.div`
   }
 
   .btns {
+    margin-top: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
